@@ -1039,7 +1039,32 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <script>
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const inputs = e.target.querySelectorAll('.form-input');
+      const name    = inputs[0].value.trim();
+      const email   = inputs[1].value.trim();
+      const message = e.target.querySelector('.form-textarea').value.trim();
+
+      const subject = encodeURIComponent('Portfolio Contact from ' + name);
+      const body    = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n\n' +
+        message
+      );
+
+      window.open(
+        'https://mail.google.com/mail/?view=cm&to=vanshrana22042004@gmail.com&su=' + subject + '&body=' + body,
+        '_blank'
+      );
+
+      // Show success message and reset form
+      document.getElementById('formMsg').style.display = 'block';
+      e.target.reset();
+      setTimeout(() => { document.getElementById('formMsg').style.display = 'none'; }, 5000);
+    }
+  </script>
   <footer>
     <span>© VANSH 2026</span>
     <div class="footer-links">

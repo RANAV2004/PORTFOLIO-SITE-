@@ -312,7 +312,7 @@
     }
 
     /* ── ABOUT ────────────────────────────────────────────── */
-    #about { background: var(--bg2); }
+    
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1.6fr;
@@ -322,15 +322,13 @@
     }
     .about-img-wrap {
       position: relative;
+      background: transparent;
     }
     .about-img-wrap img {
       width: 100%;
-      aspect-ratio: 3 / 4;
-      object-fit: cover;
-      object-position: top;
-      border-radius: 12px;
+      height: auto;
       display: block;
-      box-shadow: 0 20px 50px -20px rgba(0,0,0,0.2);
+      object-fit: contain;
     }
     .about-text p {
       color: rgba(0,0,0,0.72);
@@ -519,7 +517,7 @@
       opacity: 0;
       transition: opacity 0.3s;
     }
-    .project-card:hover { border-color: rgba(0,200,150,0.5); transform: translateY(-5px); }
+    .project-card:hover { border-color: rgba(3, 3, 3, 0.5); transform: translateY(-5px); }
     .project-card:hover::before { opacity: 1; }
     .project-num {
       font-family: var(--font-mono);
@@ -810,7 +808,7 @@
     <div class="hero-illustration" aria-hidden="true">
       <div class="hero-photo-wrap">
         <!-- Replace src below with the path/filename of your photo -->
-        <img src="ChatGPT Image May 9, 2026, 02_15_10 AM.png" alt="Vansh Rana" class="hero-photo" />
+        <img src="WhatsApp Image 2026-05-09 at 2.22.13 AM.jpeg" alt="Vansh Rana" class="hero-photo" />
       </div>
     </div>
   </section>
@@ -823,7 +821,7 @@
     <div class="about-grid reveal">
       <div class="about-img-wrap">
         <!-- Replace src with your actual photo -->
-        <img src="ChatGPT Image May 4, 2026, 12_19_57 AM.png" alt="Vansh Rana" />
+        <img src="ChatGPT_Image_May_9__2026__02_36_59_AM-removebg-preview.png" alt="Vansh Rana" />
       </div>
       <div class="about-text">
         <p>I'm a passionate software engineer and AI specialist with 4+ years of experience in building intelligent systems. I thrive on solving complex problems and creating innovative solutions that make a real impact. With a strong background in machine learning, computer vision, and natural language processing, I enjoy pushing the boundaries of what's possible with technology.</p>
